@@ -1,3 +1,4 @@
+
 :root {
   --naranja: #fc7300;
   --turquesa: #1f8a70;
@@ -15,12 +16,13 @@ body {
 }
 
 header {
-  background-image: url("aulareceso.jpg");
+  background-image: url("recursos/aulareceso.jpg");
   height: 500px; 
   background-position: center; 
   background-repeat: no-repeat; 
   background-size: cover; 
-  padding: 10px;
+  padding: 00px;
+  margin: 00px;
 }
 
   .rectangle {
