@@ -42,18 +42,21 @@ header>h1 {
 }
 
 nav {
-  background-color: var(--blanco);
+  background-color: var(--azul);
   padding: 10px;
   text-align: center;
   position: sticky;
   top: 0;
   z-index: 1;
+  font-family: 'Belanosima', sans-serif;
+  font-weight: 200;
+  font-size: 20px;
 }
 
 nav a {
-  color: var(--naranja);
+  color: var(--blanco);
   text-decoration: none;
-  margin: 0 10px;
+  margin: 70px;
 }
 
 main {
