@@ -1,3 +1,11 @@
+:root {
+  --naranja: #fc7300;
+  --turquesa: #1f8a70;
+  --azul: #00425A;
+  --azuloscuro: #181823;
+  --blanco: #eff5f5;
+}
+
 body {
   background-color: #FFFFFF;
   color: #181823;
@@ -7,19 +15,34 @@ body {
 }
 
 header {
-  background-color: #FFFFFF;
-  padding: 30px;
-  text-align: center;
+  background-image: url("Recursos/aulareceso.jpg");
+  height: 500px; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  padding: 10px;
 }
 
-h1 {
-  color: #FC7300;
+  .rectangle {
+    height: 50px;
+    width: 100px;
+    background-color: #555;
+  }
+
+header>h1 {
+  background-color: rgb(0, 66, 90, 0.8);
+  color: var(--blanco);
   font-size: 48px;
-  margin: 0;
+  margin: 3;
+  font-family: 'Belanosima', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 10px;
+
 }
 
 nav {
-  background-color: #FFFFFF;
+  background-color: var(--blanco);
   padding: 10px;
   text-align: center;
   position: sticky;
@@ -28,7 +51,7 @@ nav {
 }
 
 nav a {
-  color: #FC7300;
+  color: var(--naranja);
   text-decoration: none;
   margin: 0 10px;
 }
@@ -38,7 +61,7 @@ main {
 }
 
 section {
-  background-color: #FFFFFF;
+  background-color: var(--blanco);
   color: #181823;
   padding: 30px;
   text-align: justify;
@@ -46,8 +69,37 @@ section {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: var(--naranja)
+}
+
+.column-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 0 0 calc(33.33% - 10px);
+  background-color: var(--naranja);
+  color: var(--blanco);
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.column img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+}
+
 h2 {
-  color: #FC7300;
+  color: var(--naranja);
   font-size: 36px;
   margin-bottom: 20px;
 }
@@ -58,12 +110,19 @@ ul {
 }
 
 footer {
-  background-color: #FFFFFF;
+  background-color: var(--blanco);
   padding: 10px;
   text-align: center;
 }
 
 footer p {
-  color: #FC7300;
+  color: var(--naranja);
   font-size: 14px;
 }
+
+@media screen and (max-width: 768px) {
+  .column {
+    flex: 0 0 100%;
+  }
+}
+
