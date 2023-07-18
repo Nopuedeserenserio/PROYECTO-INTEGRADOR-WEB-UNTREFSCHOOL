@@ -4,7 +4,7 @@
   --turquesa: #1f8a70;
   --azul: #00425A;
   --azuloscuro: #181823;
-  --blanco: #eff5f5;
+  --blanco: rgb(239, 245, 245);
 }
 
 body {
@@ -90,31 +90,36 @@ section {
 }
 .columna-quienes {
   flex-basis: calc(33.33% - 20px);
-    background-color: var(--naranja);
-    color: var(--blanco);
+    background-color: var(--blanco);
+    color: var(--azuloscuro);
    text-align:center;
     margin-bottom: 10px;
     border-radius: 20px;
     padding: 10px;
     font-family:'Poppins', sans-serif;
+    font-weight: 500;
     box-sizing: border-box;
+    border: 3px solid #00425A;
   }
 
   .columna-quienes:first-child {
     flex-basis: 100%;
     background-image: url("recursos/cdc-gsRi9cWCIB0-unsplash.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: 33px;
-
+    background-position-x: 0px;
+    padding: 100px;
   }
-  .columna-quienes>p{
-background-color: rgb(0, 66, 90, 0.5);
+  .white-box{
+background-color: rgba(239, 245, 245, 0.7);
+padding: 30px;
+padding-top: 5px;
+border-radius: 20px;
   }
 
-  .columna-quienes>h3{
-    color: var(--blanco);
-    font-size: 30px;
-    padding: 0%;
+  .white-box>h2{
+    color: var(--azul);
   }
 
 .columna {
