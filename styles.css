@@ -60,6 +60,7 @@ nav a {
   color: var(--blanco);
   text-decoration: none;
   margin: 70px;
+  display: block:
 }
 
 main {
@@ -173,5 +174,26 @@ footer p {
     .columna-quienes:not(:first-child) {
      margin-top: 30px;
       flex-basis: calc(50% - 20px)
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .column {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  
+    .column-container {
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    nav {
+      padding: 10px 20px;
+    }
+    
+    nav a {
+      margin: 5px;
     }
   }
