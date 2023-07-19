@@ -58,7 +58,7 @@ header>.container-fluid>h1{
         justify-content: center;
         align-items: center;
     }
-.col-md-12{
+.col-md-10{
     background-color: #ffffff;
     background-image: url("recursos/cdc-gsRi9cWCIB0-unsplash.jpg");
     background-size: cover;
@@ -66,9 +66,11 @@ header>.container-fluid>h1{
   background-position: 33px;
   background-position-x: 0px;
   padding: 100px;
+  color: var(--azul);
+  border-radius:20px;
  }
 
-.col-md-12>div>p{
+.mision{
     background-color: rgb(239, 245, 245, 0.7);
     padding: 20px;
      font-family: 'Poppins', sans-serif;
@@ -77,14 +79,36 @@ header>.container-fluid>h1{
   text-align: center;  
   border: 3px solid #00425A;
   border-radius: 20px;
-
 }
+.valores
+{
+    background-color: var(--blanco);
+    font-family: 'Poppins', sans-serif;
+    color: var(--azul);
+    text-align: center;
+    padding:43px;
+    border: 3px solid var(--azul);
+    border-radius: 20px;
+    margin-top: 50px;
+    font-size: 17px;
+}
+.valores>h3{
+    padding-bottom: 10px;
+}
+.vision
+{
+    background-color: var(--blanco);
+    font-family: 'Poppins', sans-serif;
+    color: var(--azul);
+    text-align: center;
+    padding:50px;
+    border: 3px solid var(--azul);
+    border-radius: 20px;
+    margin-top: 50px;
+    padding-top: 20px;
+   padding-bottom: 0px;
+}
+
 section {
     padding: 50px 0;
-}
-section h2 {
-    color: #333;
-}
-section p {
-    color: #666;
 }
