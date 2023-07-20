@@ -100,12 +100,12 @@ section {
 
 .columna-quienes:first-child {
   flex-basis: 100%;
-  background-image: url("recursos/cdc-gsRi9cWCIB0-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 33px;
   background-position-x: 0px;
   padding: 100px;
+  background-color: var(--azuloscuro);
 }
 
 .white-box {
