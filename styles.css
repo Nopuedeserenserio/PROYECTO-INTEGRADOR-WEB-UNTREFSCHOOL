@@ -207,3 +207,37 @@
     background-color: transparent;
   }
   
+  footer {
+    padding: 15px;
+    background-color: #00425a !important;
+    color: var(--blanco);
+  }
+
+  .mapouter {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    height: 297px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 100%;
+    height: 297px;
+}
+
+.gmap_iframe {
+    height: 297px !important;
+}
+
+.sociales {
+    list-style-type: none;
+    padding: 0;
+  }
+
+.sociales li {
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    color: var(--blanco);
+  }
