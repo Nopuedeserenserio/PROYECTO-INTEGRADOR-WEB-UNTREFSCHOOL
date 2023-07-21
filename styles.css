@@ -1,338 +1,390 @@
 /* Variables y Generales */
 :root {
-    --naranja: #fc7300;
-    --turquesa: #1f8a70;
-    --azul: #00425a;
-    --azuloscuro: #181823;
-    --blanco: #eff5f5;
-  }
-  
-  body {
-    padding-top: 0;
-    margin: 0;
-    background-color: var(--blanco);
-    overflow-x: hidden;
-  }
-  
-  /* Header para pantalla y movil */
+  --naranja: #fc7300;
+  --turquesa: #1f8a70;
+  --azul: #00425a;
+  --azuloscuro: #181823;
+  --blanco: #eff5f5;
+}
+
+body {
+  padding-top: 0;
+  margin: 0;
+  background-color: var(--blanco);
+  overflow-x: hidden;
+}
+
+
+/* Header para pantalla y movil */
+header {
+  padding: 20px;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 200%;
+  height: 150px;
+  background-image: url("recursos/aulareceso.jpg");
+  background-position: 50% 60%;
+}
+
+.titulountref .h1-background {
+  font-size: 500px;
+}
+
+.fondoh1 {
+  font-family: "Belanosima", sans-serif;
+  background-color: rgba(239, 245, 245, 0.8);
+  color: var(--azul);
+  padding: 10px 20px;
+  font-weight: 200px;
+  border-radius: 20px;
+  font-size: 25px;
+}
+
+
+@media (min-width: 1000px) {
   header {
-    padding: 20px;
-    text-align: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 200%;
-    height: 150px;
-    background-image: url("recursos/aulareceso.jpg");
-    background-position: 50% 60%;
+    background-size: cover;
+    height: 500px;
   }
-  
-  @media (min-width: 1000px) {
-    header {
-      background-size: cover;
-      height: 500px;
-    }
-    header > .container-fluid > .d-none > h2 {
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      background-color: rgba(0, 66, 90, 0.8);
-      color: var(--blanco);
-      padding: 10px;
-    }
+
+  header>.container-fluid>.d-none>h2 {
+    margin-top: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    color: var(--blanco);
+    padding: 10px;
   }
-  
-  /* Navbar */
-  .navbar {
-    background-color: var(--azul) !important;
+
+  .fondoh1 {
+    margin-top: 200px;
     font-family: "Belanosima", sans-serif;
-    font-weight: 200;
-    font-size: 20px;
-    justify-content: center;
-    padding-right: 0;
+    background-color: rgba(239, 245, 245, 0.8);
+    color: var(--azul);
+    padding: 10px 20px;
+    font-weight: 200px;
+    display: inline-block;
+    border-radius: 20px;
   }
-  
-  .navbar .nav-link {
-    color: var(--blanco) !important;
+
+  h1.custom-heading {
+    font-size: 40px;
   }
-  
-  .navbar .nav-link:hover,
-  .navbar .nav-link:focus {
-    color: var(--blanco) !important;
-    background-color: var(--azuloscuro) !important;
-  }
-  
-  .navbar-nav {
-    display: flex !important;
-    flex-direction: column;
-    margin-right: 50px !important;
-  }
-  #quienes-somos {
+}
+
+
+/* Navbar */
+.navbar {
+  background-color: var(--azul) !important;
+  font-family: "Belanosima", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  justify-content: center;
+  padding-right: 0;
+}
+
+.navbar .nav-link {
+  color: var(--blanco) !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: var(--blanco) !important;
+  background-color: var(--azuloscuro) !important;
+}
+
+.navbar-nav {
+  display: flex !important;
+  flex-direction: column;
+  margin-right: 50px !important;
+}
+
+#quienes-somos {
   scroll-margin-top: 100px;
 }
-  
-  /* Fila de fotos divisoria */
+
+/* Fila de fotos divisoria */
+.fotos .row {
+  margin: 10;
+}
+
+.fotos .col {
+  padding: 0;
+}
+
+.fotos .img-responsive {
+  width: 100%;
+  height: auto;
+  height: 280px;
+  object-fit: cover;
+}
+
+.square-image {
+  height: 310px;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
   .fotos .row {
+    flex-direction: row;
     margin: 0;
   }
-  
-  .fotos .col {
-    padding: 0;
-  }
-  
-  .fotos .img-responsive {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-  }
-  
-  .square-image {
-    height: 310px;
-    object-fit: cover;
-  }
-  
-  @media (min-width: 768px) {
-    .fotos .row {
-      flex-direction: row;
-    }
+
   /* Sobre nuestra escuela*/
-    .col-12 {
-      padding: 0;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      color: var(--azul);
-    }
-  }
-  
-  .mision {
-    padding: 20px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
+  .col-12 {
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     color: var(--azul);
-    text-align: center;
-    border-radius: 0;
-  
-    @media (min-width: 768px) {
-      padding: 20px;
-      font-family: "Poppins", sans-serif;
-      font-weight: 500;
-      color: var(--azul);
-      text-align: center;
-      border-radius: 20px;
-      margin-bottom: 10px;
-      margin-top: 10px;
-    }
-  } 
-  .mision h2 {
-    font-family: "Belanosima", sans-serif !important;
   }
+}
 
-  /* Valores & Vision */
-  .valores {
-    background-color: var(--blanco);
-    font-family: "Poppins", sans-serif;
-    color: var(--azul);
-    text-align: center;
-    padding: 20px;
-    border: 3px solid var(--azuloscuro);
-    border-radius: 20px;
-    margin: 12px;
-    font-size: 17px;
-    line-height: 2;
-    font-weight: 500;
-    margin-right: 0;
-    margin-left: 0;
-  }
-  
-  .valores h3 {
-    padding-bottom: 10px;
-    font-family: "Belanosima", sans-serif;
-    color: var(--naranja);
-  }
-  
-  .valorescl {
-    background-color: var(--azuloscuro);
-  }
-  
-  .visioncl {
-    background-color: #00425a;
-  }
-  
+.mision {
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: var(--azul);
+  text-align: center;
+  border-radius: 0;}
+
+
+
+.mision h2 {
+  font-family: "Belanosima", sans-serif !important;
+}
+
+/* Valores & Vision */
+.valores {
+  background-color: var(--blanco);
+  font-family: "Poppins", sans-serif;
+  color: var(--azul);
+  text-align: center;
+  padding: 20px;
+  border: 3px solid var(--azuloscuro);
+  border-radius: 20px;
+  margin: 12px;
+  font-size: 17px;
+  line-height: 2;
+  font-weight: 500;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.valores h3 {
+  padding-bottom: 10px;
+  font-family: "Belanosima", sans-serif;
+  color: var(--naranja);
+}
+
+.valorescl {
+  background-color: var(--azuloscuro);
+}
+
+.visioncl {
+  background-color: #00425a;
+}
+
+.vision {
+  background-color: var(--blanco);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: var(--azul);
+  text-align: center;
+  padding: 20px;
+  border: 3px solid var(--azuloscuro);
+  border-radius: 20px;
+  margin: 12px;
+  margin-right: 8px;
+  line-height: 1.5;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.vision h3 {
+  font-family: "Belanosima", sans-serif;
+  color: var(--naranja);
+}
+
+@media (min-width: 768px) {
   .vision {
-    background-color: var(--blanco);
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    color: var(--azul);
-    text-align: center;
-    padding: 20px;
-    border: 3px solid var(--azuloscuro);
-    border-radius: 20px;
-    margin: 12px;
-    margin-right: 8px;
-    line-height: 1.5;
-    margin-right: 0;
-    margin-left: 0;
-  }
-  .vision h3 {
-    font-family: "Belanosima", sans-serif;
-    color: var(--naranja);
-  }
-
-  @media (min-width: 768px) {
-   .vision {
     margin-bottom: 30px;
     margin-top: 15px;
     margin-left: 20px;
     margin-right: 20px;
   }
+
   .valores {
     margin-top: 50px;
     margin-left: 20px;
     margin-right: 20px;
-  }}
+  }
+}
 
-  /* Por que elegirnos */
-  .porque {
-    background-image: url(recursos/pexels-pavel-danilyuk-8423051.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 20px;
-  }
-  
-  .cajablanca {
-    background-color: rgba(239, 245, 245, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  .cajablanca h2,
-  .cajablanca p {
-    background-color: transparent;
-  }
-  
+/* Por que elegirnos */
+.porque {
+  background-image: url(recursos/pexels-pavel-danilyuk-8423051.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+}
+
+.cajablanca {
+  background-color: rgba(239, 245, 245, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.cajablanca h2,
+.cajablanca p {
+  background-color: transparent;
+}
+
 /* Footer */
-  footer {
-    padding: 15px;
-    background-color: #00425a !important;
-    color: var(--blanco);
-    font-family: "Poppins", sans-serif;
-  }
- .titulo {
-    font-family:"Belanosima", sans-serif !important;
-  }
+footer {
+  padding: 15px;
+  background-color: #00425a !important;
+  color: var(--blanco);
+  font-family: "Poppins", sans-serif;
+}
 
-  .mapouter {
-    position: relative;
-    text-align: center;
-    width: 100%;
-    height: 200px;
+.titulo {
+  font-family: "Belanosima", sans-serif !important;
+}
+
+.mapouter {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 200px;
 }
 
 .gmap_canvas {
-    overflow: hidden;
-    background: none !important;
-    width: 100%;
-    height: 200px;
+  overflow: hidden;
+  background: none !important;
+  width: 100%;
+  height: 200px;
 }
 
 .gmap_iframe {
-    height: 297px !important;
+  height: 297px !important;
 }
 
 .sociales {
-    list-style-type: none;
-    padding: 0;
-  }
-  .sociales li a {
-    color: var(--naranja);
-    text-decoration: none;
-  }
-  
-  .sociales li a:hover {
-    color:var(--azuloscuro); 
-  }
-.sociales li {
-    margin-bottom: 10px;
-    font-family: "Poppins", sans-serif;
-    color: var(--blanco);
-  }
- .formulario {
-    color: var(--naranja)
- }
+  list-style-type: none;
+  padding: 0;
+}
 
-  /* Contacto */
+.sociales li a {
+  color: var(--naranja);
+  text-decoration: none;
+}
+
+.sociales li a:hover {
+  color: var(--azuloscuro);
+}
+
+.sociales li {
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  color: var(--blanco);
+}
+
+.formulario {
+  color: var(--naranja)
+}
+
+/* Contacto */
 .contact-info {
-    background-color:var(--blanco);
-    padding: 50px 0;
-  }
-  
-  .contact-info .section-title {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
+  background-color: var(--blanco);
+  padding: 50px 0;
+}
+
+.contact-info .section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-info .col-md-4 {
+  text-align: center;
+  margin-bottom: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-info h2 {
+  color: var(--azul);
+}
+
+.contact-info h4 {
+  font-family: "Belanosima", sans-serif;
+  color: var(--naranja);
+}
+
+.contact-info p {
+  color: var(--azul);
+}
+
+.contact-form {
+  padding: 50px 0;
+}
+
+.contact-form .section-title {
+  text-align: center;
+  margin-top: -80px;
+  margin-bottom: 30px;
+  color: var(--azul);
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-form form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  font-weight: 400px;
+  font-family: "Belanosima", sans-serif;
+  color: var(--azul);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--naranja);
+  color: var(--blanco);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
   .contact-info .col-md-4 {
     text-align: center;
     margin-bottom: -40px;
     font-family: "Poppins", sans-serif;
   }
-  .contact-info h2{
-    color: var(--azul);
-  }
-  
-  .contact-info h4 {
-    font-family: "Belanosima", sans-serif;
-    color: var(--naranja);
-  }
 
-  .contact-info p{
-    color: var(--azul);
-  }
-  
-  .contact-form {
-    padding: 50px 0;
-  }
-  
   .contact-form .section-title {
     text-align: center;
+    margin-top: 0px;
     margin-bottom: 30px;
     color: var(--azul);
+    font-family: "Poppins", sans-serif;
   }
-  
-  .contact-form form {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .contact-form .form-group {
-    margin-bottom: 20px;
-  }
-  
-  .contact-form label {
-    font-weight: 400px;
-    font-family: "Belanosima", sans-serif;
-    color: var(--azul);
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .contact-form button {
-    width: 100%;
-    padding: 10px;
-    background-color: var(--naranja);
-    color: var(--blanco);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  
+}
