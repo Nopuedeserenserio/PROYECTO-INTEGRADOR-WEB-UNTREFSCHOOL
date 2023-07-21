@@ -127,9 +127,9 @@ header {
 }
 
 @media (min-width: 768px) {
-  .fotos .row {
-    flex-direction: row;
-    margin: 0;
+ footer {
+  width: 100%;
+ }
   }
 
   /* Sobre nuestra escuela*/
@@ -140,7 +140,6 @@ header {
     background-position: center;
     color: var(--azul);
   }
-}
 
 .mision {
   padding: 20px;
@@ -157,32 +156,95 @@ header {
 }
 
 /* Valores & Vision */
-.valores {
-  background-color: var(--blanco);
-  font-family: "Poppins", sans-serif;
-  color: var(--azul);
+/*valores slideshow*/
+.carousel1 h2 {
+  color: var(--blanco);
+  font-family: "Belanosima", sans-serif;
   text-align: center;
-  padding: 20px;
+  margin-bottom: 20px;
+}
+ .carousel1 {
+background-color: var(--turquesa);
+padding: 20px;
+ }
+ .carousel-indicators {
+  bottom: 15px;
+ }
+.valores-slideshow .carousel-indicators li {
+  background-color: var(--azuloscuro);
+  border: 1px solid var(--azuloscuro);
+}
+
+.valores-slideshow .carousel-indicators .active {
+  background-color: var(--azul);
+  border-color: var(--azul);
+}
+
+.valores-slideshow .carousel-inner {
+  background-color: var(--blanco);
+  color: var(--azul);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
   border: 3px solid var(--azuloscuro);
   border-radius: 20px;
-  margin: 12px;
+   height: 225px;
+  justify-content: center;
+  text-align: center;
+}
+
+.valores-slideshow .carousel-inner .slide {
   font-size: 17px;
-  line-height: 2;
-  font-weight: 500;
-  margin-right: 0;
-  margin-left: 0;
-}
+  line-height: 1.5;
+  padding: 15px;
+  padding-bottom: 50px;
+  }
 
-.valores h3 {
-  padding-bottom: 10px;
-  font-family: "Belanosima", sans-serif;
+.slide h3 {
   color: var(--naranja);
+  font-size: 25px;
 }
 
-.valorescl {
-  background-color: var(--azuloscuro);
+.carousel-control-icon {
+  font-size: 20px; 
+  color:rgb(0, 66, 90, 0.7);
+  padding: 5px; 
+  border-radius: 50%;
+  position: absolute;
+  top: 86%; 
+  transform: translateY(-50%);
+   width: 28%;
+}
+.carousel-control-prev {
+  left: 100px;
+}
+.carousel-control-next {
+  right: 100px; 
 }
 
+@media (min-width: 767px) {
+  .carousel1 h2 {
+    color: var(--blanco);
+    font-family: "Belanosima", sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+  .slide h3 {
+    color: var(--naranja);
+    font-size:30px;
+  }
+  .valores-slideshow .carousel-inner .slide {
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 30px;
+    }
+    .valores {
+      margin-top: 50px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+}
+/*vision*/
 .visioncl {
   background-color: #00425a;
 }
@@ -196,32 +258,35 @@ header {
   padding: 20px;
   border: 3px solid var(--azuloscuro);
   border-radius: 20px;
-  margin: 12px;
   margin-right: 8px;
-  line-height: 1.5;
-  margin-right: 0;
-  margin-left: 0;
+  line-height: 1.6;  
 }
 
 .vision h3 {
   font-family: "Belanosima", sans-serif;
   color: var(--naranja);
+  padding-top: 10px;
+}
+.vision p {
+padding-top: 10px;
 }
 
 @media (min-width: 768px) {
   .vision {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     margin-top: 15px;
     margin-left: 20px;
     margin-right: 20px;
+    font-size: 18px;
   }
-
-  .valores {
-    margin-top: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
+  .vision h3 {
+    padding-top: 20px;
+    font-size: 30px;
   }
+.vision p {
+  padding-top: 10px;
 }
+  }
 
 /* Por que elegirnos */
 .porque {
@@ -230,6 +295,9 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
 }
 
 .cajablanca {
@@ -244,6 +312,7 @@ header {
 }
 
 /* Footer */
+
 footer {
   padding: 15px;
   background-color: #00425a !important;
@@ -279,7 +348,7 @@ footer {
 }
 
 .sociales li a {
-  color: var(--naranja);
+  color: var(--blanco);
   text-decoration: none;
 }
 
@@ -296,6 +365,7 @@ footer {
 .formulario {
   color: var(--naranja)
 }
+
 
 /* Contacto */
 .contact-info {

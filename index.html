@@ -16,7 +16,6 @@
 
 <body>
     <header>
-
         <div class="container-fluid">
             <div class="d-none d-lg-block">
                 <h2 class="logo"><img width="400px" src="ufschoolbl-01.png"></h2>
@@ -31,6 +30,7 @@
             </div>
         </div>
     </header>
+    
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <a class="navbar-brand" href="index.html">
             <img width="200" src="ufschool-01.png" alt="Logo">
@@ -96,35 +96,49 @@
                 </div>
                 <div class="col-md-6 mx-auto visioncl">
                     <div class="vision">
-                        <h3>Nuestra Visión:</h3>
+                        <h3>Nuestra Visión: Arte y tecnología</h3>
                         <p>
-                            En UntrefSchool, buscamos una educación inclusiva y motivadora que valora y promueve la
-                            integración del arte y la tecnología en la formación de nuestros estudiantes. Reconocemos el
-                            poder transformador del arte como forma de expresión y desarrollo personal. Asimismo,
-                            comprendemos la importancia de la tecnología en el mundo actual y nos esforzamos por
-                            integrarla de manera efectiva en nuestra enseñanza, preparando a los estudiantes para un
-                            entorno digital en constante evolución. Buscamos brindar una educación integral y
-                            enriquecedora que les permita a nuestros estudiantes descubrir su verdadero potencial. </p>
+                            En UntrefSchool, buscamos una educación inclusiva que trabaje de manera transversal con la mayor cantidad de lenguajes posibles. 
+                            Reconocemos el poder transformador del arte como forma de expresión y desarrollo personal, pero también la importancia de enseñar traer a nuestros estudiantes, herramientas que le permitan mantenerse al día en un mundo de constante cambio </p>
                     </div>
                 </div>
-                <div class="col-md-6 mx-auto valorescl">
-                    <div class="valores">
-                        <h3>Nuestra búsqueda:</h3>
-                        <ol>
-                            <li>Respeto: Promovemos el respeto mutuo,en su diversidad e igualdad de derechos.</li>
-                            <li>Colaboración: Buscamos la construcción colectiva del conocimiento. </li>
-                            <li>Creatividad: Estimulamos el pensamiento creativo y la exploración de nuevas ideas.</li>
-                            <li>Compromiso social: Revalorizamos la importancia de contribuir positivamente a la
-                                comunidad y al mundo que les rodea.</li>
-                        </ol>
+                <section class=" col-md-6 valores-slideshow carousel slide carousel1" data-ride="carousel">
+                    <h2>Nuestros Valores</h2>
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target=".valores-slideshow" data-slide-to="0" class="active"></li>
+                      <li data-target=".valores-slideshow" data-slide-to="1"></li>
+                      <li data-target=".valores-slideshow" data-slide-to="2"></li>
+                      <li data-target=".valores-slideshow" data-slide-to="3"></li>
+                    </ol>
+                  
+                    <!-- Slides -->
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="slide"><h3>Respeto:</h3> Valoramos y promovemos el respeto mutuo como base fundamental en toda nuestra comunidad educativa, fomentando la diversidad y la igualdad de derechos para todos los estudiantes, docentes y personal. </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="slide"><h3>Colaboración:</h3> Fomentamos el trabajo en equipo y la construcción colectiva del conocimiento, creando un ambiente colaborativo y enriquecedor donde todos los estudiantes pueden contribuir y aprender juntos.</div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="slide"> <h3>Creatividad:</h3> Estimulamos el pensamiento creativo y la exploración de nuevas ideas, brindando oportunidades para que los estudiantes expresen su creatividad a través del arte, la música, la tecnología y otras actividades.</div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="slide"><h3>Compromiso social:</h3>Revalorizamos la importancia de contribuir positivamente a la comunidad y al mundo que nos rodea, promoviendo un sentido de responsabilidad social y conciencia cívica en nuestros estudiantes.</div>
+                      </div>
                     </div>
-
-                </div>
-            </div>
-            <div class="col-md-1"></div>
-        </div>
-        </div>
-    </section>
+                  
+                    <!-- Controls -->
+                    <a class="carousel-control-prev" href=".valores-slideshow" role="button" data-slide="prev">
+                        <span class="carousel-control-icon" aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href=".valores-slideshow" role="button" data-slide="next">
+                        <span class="carousel-control-icon" aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                  </section>
+                  
 
     <section id="por-que-elegirnos" class="bg-light">
         <div class="container-fluid">
@@ -200,10 +214,7 @@
 
 
     </footer>
-    </div>
-    </div>
-    </div>
-    </footer>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
