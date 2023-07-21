@@ -1,48 +1,138 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Contacto - UntrefSchool</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>UntrefSchool</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=PT+Sans&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>UntrefSchool</h1>
-  </header>
+    <header>
+      <div class="container-fluid">
+        <div class="d-none d-lg-block"> <h2 class="logo" ><img width="250px" src="ufschool-01.png"></h2></div>
+        </div>
+    </header>
 
-  <nav>
-    <a href="index.html">Inicio</a>
-    <a href="#quienes-somos">Quienes somos</a>
-    <a href="#por-que-elegirnos">Por qué elegirnos</a>
-    <a href="#propuesta-educativa">Propuesta educativa</a>
-    <a href="#ultimas-noticias">Últimas noticias</a>
-    <a href="contacto.html">Contacto</a>
-  </nav>
+    <nav>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="index.html">
+            <img width="200" src="ufschool-01.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#quienes-somos">Quienes Somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#por-que-elegirnos">Por que elegirnos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#nuestra-propuesta">Nuestra propuesta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#noticias">Noticias</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </nav>
 
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <form action="#" method="post">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required>
+    <section class="contact-info">
+        <div class="container">
+            <h2 class="section-title">Por dudas y consultas contactate a través de: </h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Email</h4>
+                    <p>untrefschool@school.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Teléfono</h4>
+                    <p>+5411-1234-5678</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Dirección:</h4>
+                    <p>Valentín Gómez 4828 38, <br> Buenos Aires, Argentina</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+    <section class="contact-form">
+        <div class="container">
+            <h2 class="section-title">Para información sobre ingreso, inscripción y aranceles, dejanos un mensaje y nos contactaremos a la brevedad:</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nombre del padre, madre o tutor:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Ingresá tu nombre completo">
+                </div>
+                <div class="form-group">
+                  <label for="name">Nombre del niño o niña:</label>
+                  <input type="text" class="form-control" id="name" placeholder="Ingresá el nombre del niño o niña">
+              </div>
+              <div class="form-group">
+                <label for="grade">¿En que grado le gustaría sumarse a nuestra escuela?</label>
+                <select class="form-control" id="grade">
+                    <option value="1">1°</option>
+                    <option value="2">2°</option>
+                    <option value="3">3°</option>
+                    <option value="4">4°</option>
+                    <option value="5">5°</option>
+                    <option value="6">6°</option>
+                    <option value="7">7°</option>
+                </select>
+            </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ingresá tu email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje (Dejanos tus datos, contanos sobre vos y el recorrido del niño interesado en ingresar a la escuela, para que podamos orientarte):</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Contanos sobre vos "></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
 
-      <label for="telefono">Teléfono:</label>
-      <input type="tel" id="telefono" name="telefono" required>
+    <footer>
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-3">
+                  <h4>Seguinos en las redes:</h4>
+                  <ul class="sociales">
+                      <li><a href="https://www.facebook.com" target="_blank"><img height="30px" src="recursos/facebook.png">  Facebook</a></li>
+                      <li><a href="https://twitter.com/" target="_blank"><img height="30px" src="recursos/twitter.png"> Twitter</a></li>
+                      <li><a href="https://www.instagram.com" target="_blank"><img height="30px" src="recursos/instagram.png">  Instagram</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-6">
+                  <h4>Encontranos en Valentín Gómez 4828: </h4>
+                  <div class="mapouter">
+                      <div class="gmap_canvas">
+                          <iframe class="gmap_iframe" width="100%" height="297" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=1064&amp;height=297&amp;hl=en&amp;q=Valentín Gómez 4828 38&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://connectionsgame.org/">Connections Game</a></div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <h4>Contactanos:</h4>
+                  <p>Email: untrefschool@school.com</p>
+                  <p>Tel: +5411-1234-5678</p>
+                  <p>Dirección: Valentín Gómez 4828 38, <br> Buenos Aires, Argentina</p>
+                  <p>O escribinos a través de nuestra página: </p>
+              </div>
+          </div>
+      </div>
 
-      <label for="asunto">Asunto:</label>
-      <input type="text" id="asunto" name="asunto" required>
-
-      <label for="mensaje">Mensaje:</label>
-      <textarea id="mensaje" name="mensaje" required></textarea>
-
-      <input type="submit" value="Enviar">
-    </form>
-  </section>
-
-  <footer>
-    <p>Derechos de autor © 2023 UntrefSchool. Todos los derechos reservados.</p>
+      
   </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -67,6 +67,9 @@
     flex-direction: column;
     margin-right: 50px !important;
   }
+  #quienes-somos {
+  scroll-margin-top: 100px;
+}
   
   /* Fila de fotos divisoria */
   .fotos .row {
@@ -145,6 +148,7 @@
   .valores h3 {
     padding-bottom: 10px;
     font-family: "Belanosima", sans-serif;
+    color: var(--naranja);
   }
   
   .valorescl {
@@ -172,12 +176,13 @@
   }
   .vision h3 {
     font-family: "Belanosima", sans-serif;
+    color: var(--naranja);
   }
 
   @media (min-width: 768px) {
    .vision {
     margin-bottom: 30px;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -207,24 +212,29 @@
     background-color: transparent;
   }
   
+/* Footer */
   footer {
     padding: 15px;
     background-color: #00425a !important;
     color: var(--blanco);
+    font-family: "Poppins", sans-serif;
+  }
+ .titulo {
+    font-family:"Belanosima", sans-serif !important;
   }
 
   .mapouter {
     position: relative;
-    text-align: right;
+    text-align: center;
     width: 100%;
-    height: 297px;
+    height: 200px;
 }
 
 .gmap_canvas {
     overflow: hidden;
     background: none !important;
     width: 100%;
-    height: 297px;
+    height: 200px;
 }
 
 .gmap_iframe {
@@ -235,9 +245,94 @@
     list-style-type: none;
     padding: 0;
   }
-
+  .sociales li a {
+    color: var(--naranja);
+    text-decoration: none;
+  }
+  
+  .sociales li a:hover {
+    color:var(--azuloscuro); 
+  }
 .sociales li {
     margin-bottom: 10px;
     font-family: "Poppins", sans-serif;
     color: var(--blanco);
   }
+ .formulario {
+    color: var(--naranja)
+ }
+
+  /* Contacto */
+.contact-info {
+    background-color:var(--blanco);
+    padding: 50px 0;
+  }
+  
+  .contact-info .section-title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .contact-info .col-md-4 {
+    text-align: center;
+    margin-bottom: -40px;
+    font-family: "Poppins", sans-serif;
+  }
+  .contact-info h2{
+    color: var(--azul);
+  }
+  
+  .contact-info h4 {
+    font-family: "Belanosima", sans-serif;
+    color: var(--naranja);
+  }
+
+  .contact-info p{
+    color: var(--azul);
+  }
+  
+  .contact-form {
+    padding: 50px 0;
+  }
+  
+  .contact-form .section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--azul);
+  }
+  
+  .contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .contact-form label {
+    font-weight: 400px;
+    font-family: "Belanosima", sans-serif;
+    color: var(--azul);
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--naranja);
+    color: var(--blanco);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
