@@ -9,9 +9,12 @@
 
 body {
   padding-top: 0;
+  padding-bottom: 0;
   margin: 0;
   background-color: var(--blanco);
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -127,19 +130,19 @@ header {
 }
 
 @media (min-width: 768px) {
- footer {
-  width: 100%;
- }
+  footer {
+    width: 100%;
   }
+}
 
-  /* Sobre nuestra escuela*/
-  .col-12 {
-    padding: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: var(--azul);
-  }
+/* Sobre nuestra escuela*/
+.col-12 {
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--azul);
+}
 
 .mision {
   padding: 20px;
@@ -147,7 +150,8 @@ header {
   font-weight: 500;
   color: var(--azul);
   text-align: center;
-  border-radius: 0;}
+  border-radius: 0;
+}
 
 
 
@@ -163,13 +167,16 @@ header {
   text-align: center;
   margin-bottom: 20px;
 }
- .carousel1 {
-background-color: var(--turquesa);
-padding: 20px;
- }
- .carousel-indicators {
+
+.carousel1 {
+  background-color: var(--turquesa);
+  padding: 20px;
+}
+
+.carousel-indicators {
   bottom: 15px;
- }
+}
+
 .valores-slideshow .carousel-indicators li {
   background-color: var(--azuloscuro);
   border: 1px solid var(--azuloscuro);
@@ -187,7 +194,7 @@ padding: 20px;
   font-weight: 500;
   border: 3px solid var(--azuloscuro);
   border-radius: 20px;
-   height: 225px;
+  height: 225px;
   justify-content: center;
   text-align: center;
 }
@@ -197,7 +204,7 @@ padding: 20px;
   line-height: 1.5;
   padding: 15px;
   padding-bottom: 50px;
-  }
+}
 
 .slide h3 {
   color: var(--naranja);
@@ -205,23 +212,81 @@ padding: 20px;
 }
 
 .carousel-control-icon {
-  font-size: 20px; 
-  color:rgb(0, 66, 90, 0.7);
-  padding: 5px; 
+  font-size: 20px;
+  color: rgb(0, 66, 90, 0.7);
+  padding: 5px;
   border-radius: 50%;
   position: absolute;
-  top: 86%; 
+  top: 86%;
   transform: translateY(-50%);
-   width: 28%;
+  width: 28%;
 }
+
 .carousel-control-prev {
   left: 100px;
 }
+
 .carousel-control-next {
-  right: 100px; 
+  right: 100px;
+}
+@media (min-width: 765px) {
+  .valores-slideshow .carousel-inner {
+    height: 380px;
+  }
+
+  .carousel1 h2 {
+    font-size: 35px;
+    margin-top: 0px;
+  }
+
+  .slide h3 {
+    font-size: 25px;
+  }
+
+  .valores-slideshow .carousel-inner .slide {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .carousel-control-icon {
+    top: 90%;
+  }
+
+  .carousel-control-prev {
+    left: 80px;
+  }
+
+  .carousel-control-next {
+    right: 80px;
+  }
+
+  .carousel-indicators {
+    bottom: 28px;
+  }
+}
+@media (min-width: 1120px) {
+  .valores-slideshow .carousel-inner {
+    height: 250px;
+  }
+
+  .carousel-control-icon {
+    top: 88%;
+  }
+
+  .carousel-control-prev {
+    left: 80px;
+  }
+
+  .carousel-control-next {
+    right: 80px;
+  }
+
+  .carousel-indicators {
+    bottom: 25px;
+  }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 1484px) {
   .carousel1 h2 {
     color: var(--blanco);
     font-family: "Belanosima", sans-serif;
@@ -229,21 +294,43 @@ padding: 20px;
     margin-bottom: 20px;
     font-size: 40px;
   }
+
   .slide h3 {
-    color: var(--naranja);
-    font-size:30px;
+    font-size: 30px;
   }
+
   .valores-slideshow .carousel-inner .slide {
     font-size: 20px;
     line-height: 1.5;
     padding: 30px;
-    }
-    .valores {
-      margin-top: 50px;
-      margin-left: 20px;
-      margin-right: 20px;
-    }
+  }
+
+  .valores {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .valores-slideshow .carousel-inner {
+    height: 220px;
+  }
+
+  .carousel-control-icon {
+    top: 85%;
+  }
+
+  .carousel-control-prev {
+    left: 90px;
+  }
+
+  .carousel-control-next {
+    right: 90px;
+  }
+
+  .carousel-indicators {
+    bottom: 25px;
+  }
 }
+
 /*vision*/
 .visioncl {
   background-color: #00425a;
@@ -259,7 +346,10 @@ padding: 20px;
   border: 3px solid var(--azuloscuro);
   border-radius: 20px;
   margin-right: 8px;
-  line-height: 1.6;  
+  line-height: 1.6;
+  margin-bottom: 15px;
+  margin-top: 15px;
+
 }
 
 .vision h3 {
@@ -267,11 +357,12 @@ padding: 20px;
   color: var(--naranja);
   padding-top: 10px;
 }
+
 .vision p {
-padding-top: 10px;
+  padding-top: 10px;
 }
 
-@media (min-width: 768px) {
+@media (min-width:1448px) {
   .vision {
     margin-bottom: 10px;
     margin-top: 15px;
@@ -279,14 +370,16 @@ padding-top: 10px;
     margin-right: 20px;
     font-size: 18px;
   }
+
   .vision h3 {
     padding-top: 20px;
     font-size: 30px;
   }
-.vision p {
-  padding-top: 10px;
-}
+
+  .vision p {
+    padding-top: 10px;
   }
+}
 
 /* Por que elegirnos */
 .porque {
@@ -366,6 +459,16 @@ footer {
   color: var(--naranja)
 }
 
+.oficial {
+  justify-content: center;
+  text-align: center;
+  background-color: var(--azuloscuro);
+  color: var(--blanco);
+  font-family: "Poppins", sans-serif;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  font-size: 15px;
+}
 
 /* Contacto */
 .contact-info {
