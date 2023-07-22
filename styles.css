@@ -113,9 +113,7 @@ header {
 }
 
 /* Fila de fotos divisoria */
-.fotos .row {
-  margin: 10;
-}
+
 
 .fotos .col {
   padding: 0;
@@ -137,6 +135,10 @@ header {
   footer {
     width: 100%;
   }
+  .fotos .row {
+    margin: 10;
+  }
+  
 }
 
 /* Sobre nuestra escuela*/
