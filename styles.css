@@ -415,13 +415,15 @@ footer {
 
 .titulo {
   font-family: "Belanosima", sans-serif !important;
+  font-size: 20px;
 }
 
 .mapouter {
   position: relative;
   text-align: center;
   width: 100%;
-  height: 200px;
+  height: 200px;  
+  margin-bottom: 2%;
 }
 
 .gmap_canvas {
@@ -443,6 +445,7 @@ footer {
 .sociales li a {
   color: var(--blanco);
   text-decoration: none;
+  display: inline;
 }
 
 .sociales li a:hover {
@@ -453,6 +456,9 @@ footer {
   margin-bottom: 10px;
   font-family: "Poppins", sans-serif;
   color: var(--blanco);
+  display: inline;
+  margin: 8px;
+  font-size: 14px;
 }
 
 .formulario {
@@ -469,6 +475,79 @@ footer {
   padding-bottom: 0px;
   font-size: 15px;
 }
+footer p{
+  font-size: 14px;
+  display: inline;
+  margin-right: 20px;
+}
+
+@media (min-width: 768px) {
+    footer {
+      padding: 15px;
+      background-color: #00425a !important;
+      color: var(--blanco);
+      font-family: "Poppins", sans-serif;
+    }
+    
+    .titulo {
+      font-family: "Belanosima", sans-serif !important;
+    }
+    
+    .mapouter {
+      position: relative;
+      text-align: center;
+      width: 100%;
+      height: 200px;
+    }
+    
+    .gmap_canvas {
+      overflow: hidden;
+      background: none !important;
+      width: 100%;
+      height: 200px;
+    }
+    
+    .gmap_iframe {
+      height: 297px !important;
+    }
+    
+    .sociales {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .sociales li a {
+      color: var(--blanco);
+      text-decoration: none;
+    }
+    
+    .sociales li a:hover {
+      color: var(--azuloscuro);
+    }
+    
+    .sociales li {
+      margin-bottom: 10px;
+      font-family: "Poppins", sans-serif;
+      color: var(--blanco);
+    }
+    
+    .formulario {
+      color: var(--naranja)
+    }
+    
+    .oficial {
+      justify-content: center;
+      text-align: center;
+      background-color: var(--azuloscuro);
+      color: var(--blanco);
+      font-family: "Poppins", sans-serif;
+      padding-top: 5px;
+      padding-bottom: 0px;
+      font-size: 15px;
+    
+  }
+}
+
 
 /* Contacto */
 .contact-info {
