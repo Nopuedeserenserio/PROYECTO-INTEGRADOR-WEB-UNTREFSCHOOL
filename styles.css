@@ -127,7 +127,7 @@ header {
 }
 
 .square-image {
-  height: 310px;
+  height: 290px;
   object-fit: cover;
 }
 
@@ -138,7 +138,10 @@ header {
   .fotos .row {
     margin: 10;
   }
-  
+  .square-image {
+    height: 310px;
+    object-fit: cover;
+  }
 }
 
 /* Sobre nuestra escuela*/
