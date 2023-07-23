@@ -240,11 +240,11 @@ header {
 }
 
 .carousel-control-prev {
-  left: 50px;
+  left: 40px;
 }
 
 .carousel-control-next {
-  right: 50px;
+  right: 40px;
 }
 @media (min-width: 765px) {
   .carousel1{
