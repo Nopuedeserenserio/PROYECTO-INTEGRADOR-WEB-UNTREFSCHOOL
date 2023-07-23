@@ -234,17 +234,17 @@ header {
   padding: 5px;
   border-radius: 50%;
   position: absolute;
-  top: 26%;
+  top: 28%;
   transform: translateY(-50%);
   width: 28%;
 }
 
 .carousel-control-prev {
-  left: 100px;
+  left: 50px;
 }
 
 .carousel-control-next {
-  right: 100px;
+  right: 50px;
 }
 @media (min-width: 765px) {
   .carousel1{
@@ -474,6 +474,7 @@ header {
 /*propuesta*/
 .carr {
   color: var(--naranja)
+
 }
 
 .nuestra-propuesta {
